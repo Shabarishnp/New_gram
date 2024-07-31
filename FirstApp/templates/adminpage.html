@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>SEO Dream - Creative SEO HTML5 Template by TemplateMo</title>
+    {% load static %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-seo-dream.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+<!--
+
+TemplateMo 563 SEO Dream
+
+https://templatemo.com/tm-563-seo-dream
+
+-->
+
+<style>
+  .data
+  {
+    position: relative;
+    top:200px;
+    height:200px;
+    color:blue;
+  }
+  .schemes
+  {
+    background-color: antiquewhite;
+    width:90%;
+    margin:0px auto;
+  }
+  .schemes p
+  {
+    font-size: larger;
+    text-align: center;
+    padding: 20px;
+  }
+  .count_data
+  {
+    width:20%;
+    border-radius: 50px;
+    background-color: rgba(213, 68, 15, 0.964);
+    color: white;
+    float: left;
+    padding:20px;
+    margin: 10px 33px;
+  }
+  .count_data p
+  {
+    padding: 10px;
+    color:white;
+    font-size:40px;
+  }
+  table { 
+	width: 850px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 12px;
+	
+	}
+th { 
+	background: #152147; 
+	color: white; 
+	font-weight: bold; 
+	border-bottom:2px solid#4158D0 ;
+	}
+
+td, th { 
+	padding: 30px 10px; 
+	text-align: left; 
+	font-size: 18px;
+	text-align: center;
+	}
+	td{
+		background-color: #12192c;
+		color:#fff;
+	}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	
+	}
+
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		content: attr(data-column);
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+.credit a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 800;
+	}
+	
+	.credit {
+	  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	  margin: 10px;
+	  color:#fff;
+	  text-align: center;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="{% url 'home' %}" class="logo">
+              <h4>Gram Panchayat</h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{% url 'addcategory' %}" class="active">Add Category</a></li>
+              <li class="scroll-to-section"><a href="{% url 'addscheme' %}">Add Scheme</a></li>
+              <li class="scroll-to-section"><a href="{% url 'filterbene' %}">Filter Beneficiaries</a></li>
+              <li class="scroll-to-section"><a href="{% url 'loginpage' %}">Logout</a></li>
+              <li><div id="google_translate_element"></div>
+
+                <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                  }
+                </script>
+  
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+              
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="data">
+    <div class="schemes">
+    <p>In India, Panchayati raj is followed in the rural areas for self-governance and the of the local areas according to themselves and to their pace. 
+
+      In the Panchayati Raj comes the Zila Parishad, Panchayat Samiti, and the Gram Panchayat. The Panchayati raj comes in the three tiers of the government. In short, the Panchayati Raj is the whole system of governance within which the Gram panchayat is a small basic unit of administration. We have a huge population, and it becomes quite difficult to work with the system single-handedly. </p>
+      <table>
+        <thead>
+        <tr>
+          <th>Ministry Name</th>
+          <th>Number of Applications</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for u,p in zipped_data %}
+          <tr>
+            <td>{{u}}</td>
+            <td>{{p}}</td>
+          </tr>
+        </tbody>
+        {%endfor%}
+      </table>
+      
+      <div class="count_data">
+        <center><h1>Total Registration</h1>
+        <p>{{ reg_count }}</p></center>
+  
+       </div>
+       <div class="count_data">
+        <center><h1>Total Applications</h1>
+        <p>{{ app_count }}</p></center>
+  
+       </div>
+       <div class="count_data">
+        <center><h1>Total Schemes</h1>
+        <p>{{ scheme_count }}</p></center>
+  
+       </div>
+       <div class="count_data">
+        <center><h1>Total Categories</h1>
+        <p>{{ category_count }}</p></center>
+  
+       </div>  
+         
+    </div>
+    
+    
+  </div>
+
+  
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/animation.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

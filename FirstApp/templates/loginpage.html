@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>SEO Dream - Creative SEO HTML5 Template by TemplateMo</title>
+    {% load static %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-seo-dream.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login_page.css' %}">
+<!--
+
+TemplateMo 563 SEO Dream
+
+https://templatemo.com/tm-563-seo-dream
+
+-->
+
+</head>
+
+<body>
+  {% if error %}
+    <script>
+      alert('{{message}}');
+    </script>
+
+  {% endif %}
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+ 
+  <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            
+            
+            <a href="{% url 'home' %}" class="logo">
+              <h4>Gram Panchayat</h4>
+            </a>
+            
+            
+             
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{% url 'home' %}" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="{% url 'about' %}">About</a></li>
+              <li class="scroll-to-section"><a href="{% url 'register' %}">Register</a></li>
+              <li class="scroll-to-section"><a href="{% url 'loginpage' %}">Login</a></li>
+              <li><div id="google_translate_element"></div>
+
+                <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                  }
+                </script>
+  
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  
+<div class="form-body">
+  <form action="{% url 'logindetails' %}" method="post">
+    {% csrf_token %}
+      <!-- Headings for the form -->
+      <div class="headingsContainer">
+          <h3>Sign in</h3>
+          <p>Sign in with your emailid and password</p>
+      </div>
+
+      <!-- Main container for all inputs -->
+      <div class="mainContainer">
+          <!-- Username -->
+          <label for="username">Your Email id</label>
+          <input type="email" name="email" placeholder="Email" required="">
+
+          <br><br>
+
+          <!-- Password -->
+          <label for="pswrd">Your password</label>
+          <input type="password" name="pswd" placeholder="Password" required="">
+
+          <!-- sub container for the checkbox and forgot password link -->
+          
+
+
+          <!-- Submit button -->
+          <input type="submit" name="Login" value="Login"/>
+
+          <!-- Sign up link -->
+          
+
+      </div>
+
+  </form>
+
+</div>
+  
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/animation.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

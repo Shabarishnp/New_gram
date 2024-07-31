@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>SEO Dream - Creative SEO HTML5 Template by TemplateMo</title>
+    {% load static %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-seo-dream.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+<!--
+
+TemplateMo 563 SEO Dream
+
+https://templatemo.com/tm-563-seo-dream
+
+-->
+<style>
+  label {
+    font-weight: 600;
+    color: #666;
+}
+
+
+.mx-t3{
+  margin-top: 100px;
+}
+</style>
+
+</head>
+
+<body>
+  {% if error %}
+  <script>
+      alert('{{ message }}')
+  </script>
+{% endif %}
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="{% url 'home' %}" class="logo">
+              <h4>Gram Panchayat</h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{% url 'home' %}" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="">About</a></li>
+              <li class="scroll-to-section"><a href="{% url 'register' %}">Register</a></li>
+              <li class="scroll-to-section"><a href="{% url 'loginpage' %}">Login</a></li>
+              <li><div id="google_translate_element"></div>
+
+                <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                  }
+                </script>
+  
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container mt-3">
+    <form action="{% url 'registeruser' %}" method="post">
+      {% csrf_token %}
+      <div class="row jumbotron">
+        <div class="col-sm-12 mx-t3 mb-4">
+          <h2 class="text-center text-info">Register</h2>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="name-f">Full Name</label>
+          <input type="text" class="form-control" name="fullname" id="name-f" placeholder="Enter your Full Name." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="name-l">Email ID</label>
+          <input type="text" class="form-control" name="emailid" id="name-l" placeholder="Enter your Email ID." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="email">Phone No</label>
+          <input type="text" class="form-control" name="phoneno" id="email" placeholder="Enter your email." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="address-1">Address Line-1</label>
+          <input type="address" class="form-control" name="Locality" id="address-1" placeholder="Locality/House/Street no." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="address-2">Address Line-2</label>
+          <input type="address" class="form-control" name="address" id="address-2" placeholder="Village/City Name." required>
+        </div>
+        <div class="col-sm-4 form-group">
+          <label for="State">State/UT's</label>
+          <select name="state" class="form-control custom-select browser-default">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chattisgarh">Chattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="TamilNadu">TamilNadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+            <option value="Dadra and Nagar Haveli and Daman & Diu">Dadra and Nagar Haveli and Daman & Diu</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Lakshwadeep">Lakshwadeep</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="The Governement of NCT of Delhi">The Governement of NCT of Delhi</option>
+            <option value="Ladakh">Ladakh</option>
+            <option value="Puducherry">Puducherry</option>
+            </select>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="zip">Postal-Code</label>
+          <input type="zip" class="form-control" name="Zip" id="zip" placeholder="Postal-Code." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="Country">Gender</label>
+          <select name="gender" class="form-control custom-select browser-default">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="Date">Date Of Birth</label>
+          <input type="Date" name="dob" class="form-control" id="Date" placeholder="" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="sex">Marital Status</label>
+          <select id="sex" name="MStatus" class="form-control browser-default custom-select">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Widow">Widow</option>
+            <option value="Divorced">Divorced</option>
+          </select>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="sex">Area of Residence</label>
+          <select id="sex" name="aor" class="form-control browser-default custom-select">
+            <option value="Urban">Urban</option>
+            <option value="Rural">Rural</option>
+          </select>
+        </div>
+        <div class="col-sm-4 form-group">
+          <label for="sex">Caste</label>
+          <select id="sex" name="caste" class="form-control browser-default custom-select">
+            <option value="GM">GM</option>
+            <option value="OBC">OBC</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Password</label>
+          <input type="Password" name="password" class="form-control" id="pass" placeholder="Enter your password." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass2">Confirm Password</label>
+          <input type="Password" name="cnf-password" class="form-control" id="pass2" placeholder="Re-enter your password." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Age</label>
+          <input type="text" name="age" class="form-control" id="pass" placeholder="Enter your password." required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Physically Handicaped</label>
+          <select id="sex" name="ph" class="form-control browser-default custom-select">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Do you belong to minority</label>
+          <select id="sex" name="minority" class="form-control browser-default custom-select">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Are you Student</label>
+          <select id="sex" name="student" class="form-control browser-default custom-select">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Employment Status</label>
+          <select id="sex" name="empstatus" class="form-control browser-default custom-select">
+            <option value="Employed">Employed</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Self Employed/Enterprenur">Self Employed/Enterprenur</option>
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Currently Government Employee</label>
+          <select id="sex" name="currempstatus" class="form-control browser-default custom-select">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>            
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Occupation</label>
+          <select id="sex" name="occupation" class="form-control browser-default custom-select">
+            <option value="Teacher">Teacher</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Health Provider">Health Provider</option>
+            <option value="Tailor">Tailor</option>            
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="pass">Do you belong to BPL Category</label>
+          <select id="sex" name="category" class="form-control browser-default custom-select">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>          
+          </select>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="Date">Annual Income</label>
+          <select id="sex" name="annualincome" class="form-control browser-default custom-select">
+            <option value="0-100000">0-100000</option>
+            <option value="100000-500000">100000-500000</option>
+            <option value="500000-1000000">500000-1000000</option>
+            <option value="Above 1000000">Above 1000000</option>            
+          </select>
+        </div>
+        
+        <div class="col-sm-12 form-group mb-0">
+          <input type="submit" value="register" class="btn btn-primary float-right"/>
+        </div>
+  
+      </div>
+    </form>
+  </div>
+
+  
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/animation.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

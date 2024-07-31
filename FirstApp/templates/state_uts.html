@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>SEO Dream - Creative SEO HTML5 Template by TemplateMo</title>
+    {% load static %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-seo-dream.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+<!--
+
+TemplateMo 563 SEO Dream
+
+https://templatemo.com/tm-563-seo-dream
+
+-->
+<style>
+    .category-view
+    {
+        position: relative;
+        top:150px;
+        left:50%;
+        transform: translate(-50%,0%);
+        width:80%;
+        padding:10px;
+    }
+    h1
+    {
+        text-align: center;
+    }
+    .styled-table {
+    border-collapse: collapse;
+    width:80%;
+    margin: 25px auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+</style>
+
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="{% url 'home' %}" class="logo">
+              <h4>Gram Panchayat</h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{% url 'home' %}" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="">About</a></li>
+              <li class="scroll-to-section"><a href="{% url 'register' %}">Register</a></li>
+              <li class="scroll-to-section"><a href="{% url 'loginpage' %}">Login</a></li>
+              <li><div id="google_translate_element"></div>
+
+                <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                  }
+                </script>
+  
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="category-view">
+    <h1>State and UT List</h1>
+    <table class="styled-table">
+      <thead>
+        <tr>
+            <th>State</th>
+            <th>UTs</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+            
+            <tr>
+                <td>{% with statename="Andhra Pradesh" %}<a href="{% url 'view_scheme_state' statename %}">Andhra Pradesh</a>{%endwith%}</td>
+                <td>{% with statename="Andaman and Nicobar" %}<a href="{% url 'view_scheme_state' statename %}">Andaman and Nicobar{%endwith%}</a></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Arunachal Pradesh" %}<a href="{% url 'view_scheme_state' statename %}">Arunachal Pradesh</a>{%endwith%}</td>
+                <td>{% with statename="Dadra and Nagar Haveli and Daman & Diu" %}<a href="{% url 'view_scheme_state' statename %}">Dadra and Nagar Haveli and Daman & Diu</a>{%endwith%}</td>
+            </tr>
+            <tr>
+                <td>{% with statename="Assam" %}<a href="{% url 'view_scheme_state' statename %}">Assam</a>{%endwith%}</td>
+                <td>{% with statename="Jammu and Kashmir" %}<a href="{% url 'view_scheme_state' statename %}">Jammu and Kashmir</a>{%endwith%}</td>
+            </tr>
+            <tr>
+                <td>{% with statename="Bihar" %}<a href="{% url 'view_scheme_state' statename %}">Bihar</a>{%endwith%}</td>
+                <td>{% with statename="Lakshwadeep" %}<a href="{% url 'view_scheme_state' statename %}">Lakshwadeep</a>{%endwith%}</td>
+            </tr>
+            <tr>
+                <td>{% with statename="Chattisgarh" %}<a href="{% url 'view_scheme_state' statename %}">Chattisgarh</a>{%endwith%}</td>
+                <td>{% with statename="Chandigarh" %}<a href="{% url 'view_scheme_state' statename %}">Chandigarh</a>{%endwith%}</td>
+            </tr>
+            <tr>
+                <td>{% with statename="Goa" %}<a href="{% url 'view_scheme_state' statename %}">Goa</a>{%endwith%}</td>
+                <td>{% with statename="The Governement of NCT of Delhi" %}<a href="{% url 'view_scheme_state' statename %}">The Governement of NCT of Delhi</a>{%endwith%}</td>
+            </tr>
+            <tr>
+                <td>{% with statename="Gujarat" %}<a href="{% url 'view_scheme_state' statename %}">Gujarat</a>{%endwith%}</td>
+                <td>{% with statename="Ladakh" %}<a href="{% url 'view_scheme_state' statename %}">Ladakh</a>{%endwith%}</td>
+            </tr>
+            <tr>
+                <td>{% with statename="Haryana" %}<a href="{% url 'view_scheme_state' statename %}">Haryana</a>{%endwith%}</td>
+                <td>{% with statename="Puducherry" %}<a href="{% url 'view_scheme_state' statename %}">Puducherry</a>{%endwith%}</td>
+            </tr>
+            <tr>
+                <td>{% with statename="Himachal Pradesh" %}<a href="{% url 'view_scheme_state' statename %}">Himachal Pradesh</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Jharkhand" %}<a href="{% url 'view_scheme_state' statename %}">Jharkhand</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Karnataka" %}<a href="{% url 'view_scheme_state' statename %}">Karnataka</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Kerala" %}<a href="{% url 'view_scheme_state' statename %}">Kerala</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Madhya Pradesh" %}<a href="{% url 'view_scheme_state' statename %}">Madhya Pradesh</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Maharashtra" %}<a href="{% url 'view_scheme_state' statename %}">Maharashtra</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Manipur" %}<a href="{% url 'view_scheme_state' statename %}">Manipur</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Meghalaya" %}<a href="{% url 'view_scheme_state' statename %}">Meghalaya</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Mizoram" %}<a href="{% url 'view_scheme_state' statename %}">Mizoram</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Nagaland" %}<a href="{% url 'view_scheme_state' statename %}">Nagaland</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Odisha" %}<a href="{% url 'view_scheme_state' statename %}">Odisha</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Punjab" %}<a href="{% url 'view_scheme_state' statename %}">Punjab</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Rajasthan" %}<a href="{% url 'view_scheme_state' statename %}">Rajasthan</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Sikkim" %}<a href="{% url 'view_scheme_state' statename %}">Sikkim</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="TamilNadu" %}<a href="{% url 'view_scheme_state' statename %}">TamilNadu</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Telangana" %}<a href="{% url 'view_scheme_state' statename %}">Telangana</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Tripura" %}<a href="{% url 'view_scheme_state' statename %}">Tripura</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Uttarakhand" %}<a href="{% url 'view_scheme_state' statename %}">Uttarakhand</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="Uttar Pradesh" %}<a href="{% url 'view_scheme_state' statename %}">Uttar Pradesh</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{% with statename="West Bengal" %}<a href="{% url 'view_scheme_state' statename %}">West Bengal</a>{%endwith%}</td>
+                <td></td>
+            </tr>
+            
+        
+      </tbody>
+    </table>
+
+</div>
+
+  
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/animation.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>
